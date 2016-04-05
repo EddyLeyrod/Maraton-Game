@@ -1,3 +1,4 @@
+#
 #FALTA REFACTORIZAR COFDIGO
 require_relative 'model'
 
@@ -10,7 +11,7 @@ class Controller
 		@view = View.new
 
 	end
-	
+	#SEPARAR POR SINGLE RESPONSABILITY
 	def show	
 		maraton = @model.read
 		@view.inst

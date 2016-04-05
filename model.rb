@@ -8,8 +8,9 @@ class Question
 
 	end
 end
-#lee el CSV para crear un arreglo de objetos de cada pregunta
 
+#CREAMOS VARIABLES DE INSTACIA PARA CONTAR 
+#LAS RESPUESTAS CORRECTAS E INCORRECTAS
 class Maraton
 	attr_accessor :c,:i
 	def initialize
@@ -18,8 +19,8 @@ class Maraton
 		@i = 0
 	end
 
-	def read
-		
+#lee el CSV para crear un arreglo de objetos de cada pregunta
+	def read		
 		CSV.foreach("questions.csv") do |question|
 			@maraton << Question.new(question[0],question[1])
 		end
