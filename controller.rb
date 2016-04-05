@@ -1,4 +1,6 @@
+#FALTA REFACTORIZAR COFDIGO
 require_relative 'model'
+
 require_relative 'view'
 
 class Controller
